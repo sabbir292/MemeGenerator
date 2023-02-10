@@ -1,69 +1,113 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+.navbar{
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  width: 550px;
+  height: 65px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  gap: .5rem;
+  padding: 20px 37px 20px 20px;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.logo-img{
+  height: 1.9rem;
+  object-fit: cover;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.logo-text{
+  font-weight: 700;
+font-size: 20.7482px;
+line-height: 24px;
+letter-spacing: -0.1em;
+
+color: #FFFFFF;
+margin-right: auto;
+}
+
+.logo-sub-text{
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+font-size: 12px;
+line-height: 15px;
+text-align: right;
+
+color: #FFFFFF;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.main{
+  margin: 2.5rem;
+}
+
+.input-container{
+  display: flex;
+  gap: 17px;
+}
+.input{
+  border: 1px solid #D5D4D8;
+  color: black;
+  width: 230px;
+  height: 35px;
+border-radius: 5px;
+padding: .5rem;
+margin-bottom: 15px;
+}
+.getImgBtn{
+   background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+border-radius: 5px;
+border: none;
+outline: none;
+cursor: pointer;
+color: #FFFFFF;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.1em;
+width: 100%;
+height: 35px;
+}
+
+.meme-img{
+margin-top: 63px;
+width: 477px;
+border-radius: 2px;
+position:relative;
+}
+
+.meme-img img{
+ max-width: 100%;
+}
+
+.main h2{
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.top-text{
+  top: 0; 
+}
+
+.bottom-text{
+  bottom:0;
 }
